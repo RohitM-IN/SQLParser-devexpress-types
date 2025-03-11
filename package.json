@@ -1,53 +1,19 @@
 {
   "name": "@types/sqlparser-devexpress",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "2.3.9999",
   "type": "module",
-  "types": "./src/index.d.ts",
-  "exports": {
-    "./core/parser": {
-      "import": "./src/core/parser.js",
-      "types": "./src/core/parser.d.ts"
-    },
-    "./core/converter": {
-      "import": "./src/core/converter.js",
-      "types": "./src/core/converter.d.ts"
-    },
-    "./core/sanitizer": {
-      "import": "./src/core/sanitizer.js",
-      "types": "./src/core/sanitizer.d.ts"
-    },
-    "./core/tokenizer": {
-      "import": "./src/core/tokenizer.js",
-      "types": "./src/core/tokenizer.d.ts"
-    },
-    ".": {
-      "import": "./index.js",
-      "types": "./src/index.d.ts"
-    }
-  },
-  "files": [
-    "index.js",
-    "src/"
-  ],
-  "scripts": {
-    "build": "tsc"
-  },
-  "author": "Rohit Mahajan",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/RohitM-IN/SQLParser/issues"
-  },
-  "homepage": "https://github.com/RohitM-IN/SQLParser#readme",
-  "description": "Type definitions and core implementation for SQL to DevExpress filter conversion.",
-  "keywords": [
-    "sqlparser",
-    "devexpress",
-    "sql-to-devexpress",
-    "ast-parser",
-    "typescript-types"
-  ],
+  "private": true,
+  "projects": [
+        "https://github.com/RohitM-IN/SQLParser"
+    ],
   "devDependencies": {
-    "typescript": "^5.4.0"
-  }
+    "typescript": "^5.4.0",
+    "@types/sqlparser-devexpress": "workspace:."
+  },
+  "owners": [
+        {
+            "name": "Rohit Mahajan",
+            "githubUsername": "RohitM-IN"
+        }
+    ]
 }
